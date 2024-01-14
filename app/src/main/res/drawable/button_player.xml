@@ -1,0 +1,17 @@
+<!-- res/drawable/rounded_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+
+    <!-- Set the radius here, adjust the value as needed -->
+    <corners android:radius="8dp" />
+    <solid android:color="@color/player_button" />
+    <!-- You can also set other properties like background color -->
+<!--    <solid android:color="#3498db" />-->
+
+    <!-- Stroke properties (optional) -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/white" />
+
+</shape>

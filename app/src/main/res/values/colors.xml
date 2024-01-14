@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_purple">#D896FF</color>
+    <color name="player_button">#00006F</color>
+    <color name="banker_button">#D9001F</color>
+    <color name="skip_button">#FDA700</color>
+    <color name="purple">#6F3E9A</color>
+    <color name="light_black">#1E1E1E</color>
+</resources>

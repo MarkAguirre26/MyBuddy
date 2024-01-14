@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Buddy</string>
+    <string name="peak">Peak</string>
+    <string name="trough">Trough</string>
+    <string name="drawdown">Drawdown</string>
+    <string name="Start">Start</string>
+    <string name="Now">Now</string>
+    <string name="Units">Units</string>
+    <string name="Profit">Profit</string>
+</resources>
