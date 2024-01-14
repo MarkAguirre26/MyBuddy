@@ -7,12 +7,11 @@
     <corners android:radius="8dp" />
     <solid android:color="@color/banker_button" />
     <!-- You can also set other properties like background color -->
-<!--    <solid android:color="#3498db" />-->
+    <!--    <solid android:color="#3498db" />-->
 
     <!-- Stroke properties (optional) -->
     <stroke
         android:width="2dp"
-        android:color="@color/white"
-        />
+        android:color="@color/white" />
 
 </shape>

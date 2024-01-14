@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="mainBG">#F5F5F8</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="light_purple">#D896FF</color>
@@ -8,4 +9,5 @@
     <color name="skip_button">#FDA700</color>
     <color name="purple">#6F3E9A</color>
     <color name="light_black">#1E1E1E</color>
+    <color name="button_borders">#9F9F9F</color>
 </resources>

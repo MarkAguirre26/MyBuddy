@@ -4,9 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/mainBG"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/moneyManagementPanel"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@color/player_button"
+            android:gravity="center"
+            android:text="PLAYER"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/purple"
+                android:gravity="center"
+                android:text="Stake"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/button_borders"
+                android:gravity="center"
+                android:text="0.20"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
     <HorizontalScrollView
+        android:id="@+id/moneyManagementPanel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/StartNowUnitsProfit"
@@ -15,7 +68,6 @@
         android:scrollbars="none">
 
         <LinearLayout
-            android:id="@+id/moneyManagementPanel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -478,9 +530,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="vertical"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
-        android:paddingBottom="5dp"
+        android:padding="5dp"
+
         android:weightSum="5">
 
         <!-- Lower part of the screen with five equal-sized grids -->
@@ -497,6 +548,7 @@
                 android:paddingEnd="5dp">
                 <!-- Add your views for the first grid here -->
                 <androidx.appcompat.widget.AppCompatButton
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/button_player"
@@ -516,7 +568,7 @@
                 android:paddingEnd="5dp">
 
                 <androidx.appcompat.widget.AppCompatButton
-
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/button_banker"
@@ -534,13 +586,14 @@
                 android:paddingEnd="5dp">
 
                 <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:background="@drawable/button_skip"
                     android:paddingStart="17dp"
-                    android:paddingTop="7dp"
+                    android:paddingTop="10dp"
                     android:paddingEnd="17dp"
-                    android:paddingBottom="7dp"
+                    android:paddingBottom="10dp"
                     android:scaleType="fitXY"
                     android:textColor="@color/white"
                     android:textSize="40sp"
@@ -555,13 +608,14 @@
                 android:paddingEnd="5dp">
                 <!-- Add your views for the fourth grid here -->
                 <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:background="@drawable/button_undo"
                     android:paddingStart="17dp"
-                    android:paddingTop="7dp"
+                    android:paddingTop="10dp"
                     android:paddingEnd="17dp"
-                    android:paddingBottom="7dp"
+                    android:paddingBottom="10dp"
                     android:scaleType="fitXY"
                     android:textColor="@color/white"
                     android:textSize="40sp"
@@ -575,17 +629,18 @@
                 android:layout_weight="1">
                 <!-- Add your views for the fifth grid here -->
                 <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:background="@drawable/button_delete"
-                    android:paddingStart="17dp"
-                    android:paddingTop="7dp"
-                    android:paddingEnd="17dp"
-                    android:paddingBottom="7dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
                     android:scaleType="fitXY"
                     android:textColor="@color/white"
                     android:textSize="40sp"
-                    app:srcCompat="@drawable/trash_can" />
+                    app:srcCompat="@drawable/reset" />
             </GridLayout>
 
         </LinearLayout>
