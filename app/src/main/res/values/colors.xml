@@ -5,9 +5,15 @@
     <color name="white">#FFFFFFFF</color>
     <color name="light_purple">#D896FF</color>
     <color name="player_button">#00006F</color>
+    <color name="wait">#2196F3</color>
     <color name="banker_button">#D9001F</color>
     <color name="skip_button">#FDA700</color>
+    <color name="skip_button_disabled">#9E6903</color>
+    <color name="delete_button">#A903AC</color>
+    <color name="undo_button">#D896FF</color>
+    <color name="undo_button_disabled">#6A4580</color>
     <color name="purple">#6F3E9A</color>
     <color name="light_black">#1E1E1E</color>
     <color name="button_borders">#9F9F9F</color>
+    <color name="parity">#91ED91</color>
 </resources>

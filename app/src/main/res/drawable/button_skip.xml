@@ -1,17 +1,24 @@
-<!-- res/drawable/rounded_button.xml -->
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
+<!-- res/drawable/button_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#CD8C0D" /> <!-- Change the color to your desired pressed color -->
+            <stroke
+                android:width="2dp"
+                android:color="#FFFFFF" /> <!-- White stroke around the button -->
+            <corners android:radius="8dp" /> <!-- Optional: Set corner radius -->
+        </shape>
+    </item>
 
-
-    <!-- Set the radius here, adjust the value as needed -->
-    <corners android:radius="8dp" />
-    <solid android:color="@color/skip_button" />
-    <!-- You can also set other properties like background color -->
-<!--    <solid android:color="#3498db" />-->
-
-    <!-- Stroke properties (optional) -->
-    <stroke
-        android:width="2dp"
-        android:color="@color/white" />
-
-</shape>
+    <!-- Default state -->
+    <item>
+        <shape>
+            <solid android:color="@color/skip_button" /> <!-- Change the color to your default color -->
+            <stroke
+                android:width="3dp"
+                android:color="#FFFFFF" /> <!-- White stroke around the button -->
+            <corners android:radius="8dp" /> <!-- Optional: Set corner radius -->
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,11 @@
+<!-- res/drawable/circular_shape.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!-- Set the border color and width -->
+    <stroke
+        android:width="3dp"
+        android:color="@color/banker_button"/> <!-- Set the border color -->
+
+
+    <solid android:color="#ffffff"/> <!-- Set the background color of the circle -->
+</shape>
